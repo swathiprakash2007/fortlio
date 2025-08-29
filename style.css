@@ -1,0 +1,105 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navigation */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-left: 1rem;
+}
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #61dafb;
+  color: #000;
+}
+
+/* Sections */
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.project {
+  background: white;
+  padding: 1rem;
+  flex: 1 1 45%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    width: 150px;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .project-list {
+    flex-direction: column;
+  }
+}
